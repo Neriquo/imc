@@ -1,4 +1,4 @@
-import 'package:bmi_calculator/results_page.dart';
+import 'package:imc/results_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'bottom_button.dart';
@@ -14,7 +14,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  Gender selectedGender;
+  Gender? selectedGender;
   int height = 180;
   int weight = 60;
   int age = 20;
@@ -23,7 +23,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: Text('IMC CALCULATOR'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -113,7 +113,7 @@ class _InputPageState extends State<InputPage> {
                     ),
                   ),
                 ],
-              ),
+              ), onPress: () {  },
             ),
           ),
           Expanded(
@@ -157,7 +157,7 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    backgroundColor: activeCardColor,
+                    backgroundColor: activeCardColor, onPress: () {  },
                   ),
                 ),
                 Expanded(
@@ -198,7 +198,7 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    backgroundColor: activeCardColor,
+                    backgroundColor: activeCardColor, onPress: () {  },
                   ),
                 ),
               ],

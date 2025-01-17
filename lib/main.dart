@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'input_page.dart';
 
-void main() => runApp(BMICalculator());
+void main() => runApp(ImcCalculator());
 
-class BMICalculator extends StatelessWidget {
+class ImcCalculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

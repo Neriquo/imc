@@ -9,15 +9,15 @@ class ResultsPage extends StatelessWidget {
   final String interpretation;
 
   const ResultsPage(
-      {@required this.bmiResults,
-      @required this.resultText,
-      @required this.interpretation});
+      {required this.bmiResults,
+      required this.resultText,
+      required this.interpretation});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: Text('IMC CALCULATOR'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -55,7 +55,7 @@ class ResultsPage extends StatelessWidget {
                     style: bodyTextStyle,
                   ),
                 ],
-              ),
+              ), onPress: () {  },
             ),
           ),
           BottomButton(
