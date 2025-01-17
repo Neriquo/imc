@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(BMICalculator());
+void main() => runApp(Imc());
 
-class BMICalculator extends StatelessWidget {
+class Imc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,12 +21,13 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: Text('IMC CALCULATOR'),
       ),
       body: Center(
         child: Text('Body Text'),
       ),
       floatingActionButton: FloatingActionButton(
+        onPressed: () {  },
         child: Icon(Icons.add),
       ),
     );
